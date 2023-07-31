@@ -6,7 +6,7 @@ $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
 
 $query = $db->prepare("SELECT `name`,`year`,`director`,`genre` FROM `movies`");
 $query->execute();
-$data = $querry->fetchAll();
+$data = $query->fetchAll();
 
 echo "<pre>";
 var_dump($data);
