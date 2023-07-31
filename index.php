@@ -10,7 +10,6 @@ $data = $querry->fetchAll();
 
 
 
-array_push($data);
 echo "<pre>";
 var_dump($data);
 echo "</pre>";
