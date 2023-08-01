@@ -20,10 +20,10 @@ $movies = $query->fetchAll();
     <nav class="navbar"></nav>
         <p class="navbar-title">Favorite Movies</p>
     <div class="card">
-        <h1 class="h1-card">Name:</h1>
-        <h2 class="h2-card">Director:</h2>
-        <p class="p-card">Genre:</h2>
-        <p class="p-card">Year:</h2>
+        <h1>Name:</h1>
+        <h2>Director:</h2>
+        <p>Genre:</h2>
+        <p>Year:</h2>
     </div>
 </body>
 </html>
