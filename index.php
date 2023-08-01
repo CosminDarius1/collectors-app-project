@@ -19,11 +19,13 @@ $movies = $query->fetchAll();
 <body>
     <nav class="navbar"></nav>
         <p class="navbar-title">Favorite Movies</p>
-    <div class="card">
-        <h1>Name:</h1>
-        <h2>Director:</h2>
-        <p>Genre:</h2>
-        <p>Year:</h2>
+        <section class="card-section">
+            <div class="card">
+                <h1>Name:</h1>
+                <h2>Director:</h2>
+                <p>Genre:</h2>
+                <p>Year:</h2>
+        </section>
     </div>
 </body>
 </html>
