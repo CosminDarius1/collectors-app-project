@@ -6,8 +6,42 @@ $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
 
 $query = $db->prepare("SELECT `name`,`year`,`director`,`genre` FROM `movies`");
 $query->execute();
-$movies = $query->fetchAll();
+$allMoviesAsArrays = $query->fetchAll();
+$allMoviesAsObjects = [];
+
+    
+        foreach($allMoviesAsArrays as $movieAsArray) 
+        {
+            $movieAsObject = new Movie($firstMovieAsArray['name'],$firstMovieAsArray['director'],$firstMovieAsArray['genre'],$firstMovieAsArray['year']);
+            array_push($allMoviesAsObjects, $movieAsObject);
+    
+        };
+      
+    
+
+$firstMovieAsArray = $allMoviesAsArrays[0];
+$firstMovieAsObject = new Movie($firstMovieAsArray['name'],$firstMovieAsArray['director'],$firstMovieAsArray['genre'],$firstMovieAsArray['year']);
+
+// function createCard(array $moviesDatabase) {
+//     foreach($moviesDatabase as $movies) 
+//     { 
+//            echo"<h1>";
+        //       echo($movies['name']);
+        //    echo"</h1>";
+        //    echo"<p>";
+        //        echo($movies['director']);
+        //    echo"</p>";
+        //    echo"<p>";
+        //        echo($movies['genre']);
+        //    echo "</p>";
+        //    echo "<p>";
+        //        echo($movies['year']);
+//            echo "</p>";
+//        }
+// };
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,10 +55,9 @@ $movies = $query->fetchAll();
         <p class="navbar-title">Favorite Movies</p>
         <section class="card-section">
             <div class="card">
-                <h1>Name:</h1>
-                <h2>Director:</h2>
-                <p>Genre:</h2>
-                <p>Year:</h2>
+            <?php 
+            // createCard($moviesDatabase);
+            ?>
         </section>
     </div>
 </body>
