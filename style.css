@@ -23,13 +23,17 @@ nav {
   flex-wrap: wrap;
   width: 100%;
   flex-direction: column;
-  max-width: 256px;
+  max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid black;
-  border-radius: 20px;
   padding: 0 20px;
-  overflow-wrap: anywhere;
 }
 .card {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px;
+}
+.card h1 p {
+  padding: 200px;
+  justify-content: center;
 }
