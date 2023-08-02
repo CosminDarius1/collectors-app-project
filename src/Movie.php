@@ -3,7 +3,7 @@
 class Movie {
     private string $name;
     private string $director;
-    private string  $genre;
+    private string $genre;
     private int $year;
 
     public function __construct(string $name, string $director, string $genre, int $year)
