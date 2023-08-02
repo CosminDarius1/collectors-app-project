@@ -14,7 +14,7 @@ class Movie {
         $this->year = $year;
     }
 
-    public function createCard()
+    public function createCard(): string
         {
             return
             "<div class='card'>" .
