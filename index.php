@@ -22,10 +22,10 @@ foreach($allMoviesAsArrays as $movieAsArray)
     <title>Favorite movies</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<nav class="navbar"> 
+    <p class="navbar-title">Favorite Movies</p>
+</nav>
 <body>
-    <header class="header"> 
-        <p class="header-title">Favorite Movies</p>
-    </header>
         <section class="card-section">   
             <?php foreach($allMoviesAsObjects as $movie) {
                    echo $movie->createCard();

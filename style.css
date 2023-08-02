@@ -3,20 +3,28 @@
   font-family: sans-serif;
   letter-spacing: 2px;
 }
+html {
+  font-size: 15px;
+}
 body {
   background-color: #e0e0e0;
 }
-header {
-  position: fixed;
+nav {
+  position: initial;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   margin-left: 0;
   top: 0;
   left: 0;
   z-index: 10;
-  padding: 20px;
+  padding: 10px;
+}
+p.navbar-title {
+  justify-content: center;
+  display: flex;
+  font-size: 1.5rem;
 }
 .card-section {
   display: flex;
@@ -26,14 +34,15 @@ header {
   max-width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
+  overflow: anywhere;
 }
 .card {
   border: 1px solid black;
   border-radius: 20px;
   margin: 5px;
-}
-.card h1 p {
-  padding: 200px;
-  justify-content: center;
+  padding: 0 20px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  object-fit: cover;
 }
