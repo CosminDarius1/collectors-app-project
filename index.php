@@ -10,14 +10,13 @@ $allMoviesAsArrays = $query->fetchAll();
 $allMoviesAsObjects = [];
 foreach($allMoviesAsArrays as $movieAsArray) 
 {
-    $movieAsObject = new Movie($movieAsArray['name'],$movieAsArray['director'],$movieAsArray['genre'],$movieAsArray['year']);
+    $movieAsObject = new Movie($movieAsArray['name'], $movieAsArray['director'], $movieAsArray['genre'], $movieAsArray['year']);
     array_push($allMoviesAsObjects, $movieAsObject);
-
 };
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
