@@ -1,6 +1,6 @@
 <?php
 
-require_once('functions.php');
+require_once('../src/Movie.php');
 $db = new PDO('mysql:host=db;dbname=collectorapp','root','password');
 $db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE,PDO::FETCH_ASSOC);
@@ -24,11 +24,12 @@ foreach($allMoviesAsArrays as $movieAsArray)
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <header class="header"></header>
-        <p class="navbar-title">Favorite Movies</p>
+    <header class="header"> 
+        <p class="header-title">Favorite Movies</p>
+    </header>
         <section class="card-section">   
             <?php foreach($allMoviesAsObjects as $movie) {
-                   echo  $movie->createCard();
+                   echo $movie->createCard();
                    } ?>
         </section>
     </div>
