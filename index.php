@@ -24,7 +24,7 @@ foreach($allMoviesAsArrays as $movieAsArray)
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <nav class="navbar"></nav>
+    <header class="header"></header>
         <p class="navbar-title">Favorite Movies</p>
         <section class="card-section">   
             <?php foreach($allMoviesAsObjects as $movie) {

@@ -6,7 +6,7 @@
 body {
   background-color: #e0e0e0;
 }
-nav {
+header {
   position: fixed;
   display: flex;
   flex-direction: row;
