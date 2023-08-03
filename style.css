@@ -3,37 +3,48 @@
   font-family: sans-serif;
   letter-spacing: 2px;
 }
+html {
+  font-size: 15px;
+}
 body {
-  background-color: #e0e0e0;
+  background-color: #000000;
 }
 header {
-  position: fixed;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
-  margin-left: 0;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  color: #c0c0c0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card-section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
   max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 20px;
+  justify-content: center;
 }
 .card {
   border: 1px solid black;
   border-radius: 20px;
   margin: 5px;
+  padding: 0 20px;
+  width: 40%;
+  flex-direction: column;
+  display: flex;
+  background-color: #ff8c00;
 }
-.card h1 p {
-  padding: 200px;
-  justify-content: center;
+@media screen and (max-width: 800px) {
+  .card-section {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
 }
