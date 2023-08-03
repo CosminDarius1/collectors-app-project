@@ -11,7 +11,7 @@ class MovieTest extends TestCase {
         $movieTest = new Movie('Barbie', 'Greta Gerwig', 'Comedy', 2023);
         $expectedOutput = 
         '<div class="card">' .
-            '<h1>Barbie</h1>' . 
+            '<h2>Barbie</h2>' . 
             '<p>Director: Greta Gerwig</p>' .
             '<p>Genre: Comedy</p>' . 
             '<p>Year: 2023</p>' . 

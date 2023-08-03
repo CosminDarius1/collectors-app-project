@@ -24,5 +24,5 @@ class Movie {
         '<p>Year: ' . $this->year . '</p>' . 
         '</div>';
     }
-    }
+}
 
