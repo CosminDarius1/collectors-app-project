@@ -10,7 +10,6 @@ body {
   background-color: #000000;
 }
 header {
-  width: 100%;
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -18,17 +17,14 @@ header {
 h1 {
   color: #c0c0c0;
 }
-body {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 .card-section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   max-width: fit-content;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .card {
   border: 1px solid black;
