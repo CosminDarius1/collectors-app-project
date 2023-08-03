@@ -7,11 +7,10 @@ $query = $db->prepare("SELECT `name`,`year`,`director`,`genre` FROM `movies`");
 $query->execute();
 $allMoviesAsArrays = $query->fetchAll();
 $allMoviesAsObjects = [];
-foreach($allMoviesAsArrays as $movieAsArray) 
-{
+foreach($allMoviesAsArrays as $movieAsArray) {
     $movieAsObject = new Movie($movieAsArray['name'], $movieAsArray['director'], $movieAsArray['genre'], $movieAsArray['year']);
     array_push($allMoviesAsObjects, $movieAsObject);
-};
+}
 ?>
 
 <!DOCTYPE html>
