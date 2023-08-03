@@ -15,14 +15,14 @@ class Movie {
     }
 
     public function createCard(): string
-        {
-            return
-            "<div class='card'>" .
-            "<h2>" .  $this->name . "</h2>" . 
-            "<p>Director: " . $this->director . "</p>" .
-            "<p>Genre: " . $this->genre . "</p>" . 
-            "<p>Year: " . $this->year . "</p>" . 
-            "</div>";
-        }
+    {
+        return
+        '<div class="card">' .
+        '<h2>' .  $this->name . '</h2>' . 
+        '<p>Director: ' . $this->director . '</p>' .
+        '<p>Genre: ' . $this->genre . '</p>' . 
+        '<p>Year: ' . $this->year . '</p>' . 
+        '</div>';
+    }
     }
 
