@@ -27,8 +27,10 @@ foreach($allMoviesAsArrays as $movieAsArray)
         <h1>Favorite Movies</h1>
     </header>
     <section class="card-section">   
-         <?php foreach($allMoviesAsObjects as $movie)
-          {echo $movie->createCard();} ?>
+        <?php foreach($allMoviesAsObjects as $movie) {
+            echo $movie->createCard();
+        } 
+        ?>
     </section>
 </body>
 </html>
