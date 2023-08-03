@@ -29,7 +29,6 @@ foreach($allMoviesAsArrays as $movieAsArray)
     <section class="card-section">   
          <?php foreach($allMoviesAsObjects as $movie)
           {echo $movie->createCard();} ?>
-        </section>
-    </div>
+    </section>
 </body>
 </html>
