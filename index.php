@@ -22,14 +22,13 @@ foreach($allMoviesAsArrays as $movieAsArray)
     <title>Favorite movies</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<header> 
-    <h1>Favorite Movies</h1>
-</header>
 <body>
-        <section class="card-section">   
-            <?php foreach($allMoviesAsObjects as $movie) {
-                   echo $movie->createCard();
-                   } ?>
+    <header> 
+        <h1>Favorite Movies</h1>
+    </header>
+    <section class="card-section">   
+         <?php foreach($allMoviesAsObjects as $movie)
+          {echo $movie->createCard();} ?>
         </section>
     </div>
 </body>

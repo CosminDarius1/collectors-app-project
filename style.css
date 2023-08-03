@@ -24,28 +24,38 @@ header {
 h1 {
   justify-content: center;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 body {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .card-section {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  flex-direction: column;
   max-width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
   overflow: anywhere;
+  justify-content: center;
+  font-size: 1rem;
 }
 .card {
   border: 1px solid black;
   border-radius: 20px;
   margin: 5px;
   padding: 0 20px;
-  width: 100%;
+  width: 40%;
   flex-direction: column;
   display: flex;
   object-fit: cover;
+  background-color: #ff8c00;
+}
+@media screen and (max-width: 800px) {
+  .card-section {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
 }
