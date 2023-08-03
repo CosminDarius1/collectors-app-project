@@ -9,7 +9,7 @@ html {
 body {
   background-color: #e0e0e0;
 }
-nav {
+header {
   position: initial;
   display: flex;
   flex-direction: row;
@@ -21,10 +21,13 @@ nav {
   z-index: 10;
   padding: 10px;
 }
-p.navbar-title {
+h1 {
   justify-content: center;
   display: flex;
   font-size: 1.5rem;
+}
+body {
+  display: flex;
 }
 .card-section {
   display: flex;

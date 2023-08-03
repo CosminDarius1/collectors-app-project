@@ -18,7 +18,7 @@ class Movie {
         {
             return
             "<div class='card'>" .
-            "<h1>" .  $this->name . "</h1>" . 
+            "<h2>" .  $this->name . "</h2>" . 
             "<p>Director: " . $this->director . "</p>" .
             "<p>Genre: " . $this->genre . "</p>" . 
             "<p>Year: " . $this->year . "</p>" . 
