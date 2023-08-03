@@ -12,7 +12,6 @@ foreach($allMoviesAsArrays as $movieAsArray) {
     array_push($allMoviesAsObjects, $movieAsObject);
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
@@ -26,9 +25,10 @@ foreach($allMoviesAsArrays as $movieAsArray) {
         <h1>Favorite Movies</h1>
     </header>
     <section class="card-section">   
-        <?php foreach($allMoviesAsObjects as $movie) {
-            echo $movie->createCard();
-        } 
+        <?php 
+            foreach($allMoviesAsObjects as $movie) {
+                echo $movie->createCard();
+            } 
         ?>
     </section>
 </body>
